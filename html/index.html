@@ -22,10 +22,10 @@
                                <li class="top-menu_item"><a href="#lec_2">Лекция 2</a></li>
                                <li class="top-menu_item"><a href="#lec_3">Лекция 3</a></li>
                                <li class="top-menu_item"><a href="#lec_4">Лекция 4</a></li>
-                               <li class="top-menu_item"><a href="#">Лекция 5</a></li>
-                               <li class="top-menu_item"><a href="#">Лекция 6</a></li>
-                               <li class="top-menu_item"><a href="#">Лекция 7</a></li>
-                               <li class="top-menu_item"><a href="#">Лекция 8</a></li>
+                               <li class="top-menu_item"><a href="#lec_5">Лекция 5</a></li>
+                               <li class="top-menu_item"><a href="#lec_6">Лекция 6</a></li>
+                               <li class="top-menu_item"><a href="#lec_7">Лекция 7</a></li>
+                               <li class="top-menu_item"><a href="#lec_8">Лекция 8</a></li>
                             </ul>
                         </div>
                      </nav>
@@ -35,31 +35,34 @@
    </header>
    <main>
        <div class="container">
-            <div class="row">
-                <div class="lec">
+          <div class="row">
+              <div class="col-md-4"></div>
+              
+              <div class="col-md-4">
+                  <div class="lec">
                    <h2>Лекция 1</h2>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="task">
                             <span>Задание 1</span>
                             <span>Даны два ненулевых числа. Найти их сумму, разность, произведение и частное.</span><br>
                             <input type="button" onclick="button1()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="task">
                             <span>Задание 2</span>
                             <span>Даны два числа. Найти среднее арифметическое их квадратов и среднее арифметическое их модулей.(Math.pow Math.abs)</span><br>
                             <input type="button" onclick="button2()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="task">
                             <span>Задание 3</span>
                             <span>Скорость лодки в стоячей воде V км/ч, скорость течения реки U км/ч (U < V). Время движения лодки по озеру T1 ч, а по реке (против течения) — T2 ч. Определить путь S, пройденный лодкой.</span><br>
                             <input type="button" onclick="button3()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="task">
                             <span>Задание 4</span>
                             <span>Даны координаты (как целые от 1 до 8) двух различных полей шахматной доски. Если конь за один ход может перейти с одного поля на другое, вывести логическое значение True, в противном случае вывести значение False.</span><br>
@@ -67,47 +70,46 @@
                         </div>
                     </div>
                </div>
-          </div>
-          <div class="row">
-              <p><a name="lec_2"></a></p>
+               
+               <p><a name="lec_2"></a></p>
                 <div class="lec">
                    <h2>Лекция 2</h2>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="task">
                             <span>Задание 1.1</span>
                             <span>Используя цикл while и введенную с клавиатуры строку отобразить её наоборот.</span>
                             <input type="button" onclick="button5()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="task">
                             <span>Задание 1.2</span>
                             <span>** Перевести число, введенное с клавиатуры в систему счисления по основанию 3, отобразить цифры наоборот и перевести обратно в десятичную систему из троичной.</span>
                             <input type="button" onclick="button6()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="task">
                             <span>Задание 1.3</span>
                             <span>Посчитать сумму чисел от 1 до «введенного с клавиатуры неотрицательного числа».</span>
                             <input type="button" onclick="button7()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="task">
                             <span>Задание 2.1</span>
                             <span>Написать Switch, который принимает на вход значение от 1 до 7 и отображает день недели. Если выбраны выходные (if) написать "Ура!".</span>
                             <input type="button" onclick="button8()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="task">
                             <span>Задание 2.2</span>
                             <span>Написать меню игры, в котором принимаются команды: 'start' , 'options' и 'exit'. После ввода команды выполняется действие команды и ожидается следующая (кроме exit).</span>
                             <input type="button" onclick="button9()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="task">
                             <span>Задание 3.1</span>
                             <span>Используя форматирование вывода вывести числа от [начального] (ввод с клавиатуры) до [конечного] в виде [n] колонок.<br>** Учесть длину числа, используемую при выводе.</span>
@@ -115,9 +117,8 @@
                         </div>
                     </div>
                </div>
-          </div>
-          <div class="row">
-              <p><a name="lec_3"></a></p>
+               
+               <p><a name="lec_3"></a></p>
                 <div class="lec">
                    <h2>Лекция 3</h2>
                     <div class="col-md-3">
@@ -169,109 +170,212 @@
                             <span>Факториал числа представляет собой произведение всех натуральных чисел от 1 до этого числа. По введенному числу найти его факториал.</span>
                             <input type="button" onclick="button16()" value='Запустить'/>
                         </div>
-                    </div>
-                    <div class="col-md-3">
+                    
                         <div class="task">
                             <span>Задание 4.3</span>
                             <span>Заполнить массив выбранного размера числами фибоначчи.
                             <br>Fn = F(n-1) + F(n-2)</span>
                             <input type="button" onclick="button17()" value='Запустить'/>
                         </div>
-                    </div>
-                    <div class="col-md-3">
+                    
                         <div class="task">
                             <span>Задание 5</span>
                             <span>Найти максимальный и минимальный элемент массива и показать его индекс. Массив заполнить случайными целыми числами.</span>
                             <input type="button" onclick="button18()" value='Запустить'/>
                         </div>
-                    </div>                    
+                    </div>                 
                </div>
-          </div>
-          <div class="row">
-              <p><a name="lec_4"></a></p>
+               
+               <p><a name="lec_4"></a></p>
                 <div class="lec">
                    <h2>Лекция 4</h2>
-<!--
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="task">
                             <span>Задание 1</span>
-                            <span>Реализовать.</span>
-                            <input type="button" onclick="button11()" value='Запустить'/>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button19()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="task">
-                            <span>Задание 2.1</span>
-                            <span>Заполнить.</span>
-                            <input type="button" onclick="button12()" value='Запустить'/>
+                            <span>Задание 2</span>
+                            <span>Функция проверки авторизации по паре логин-пароль, которая выводит сообщения:<br>Здравствуй, [login]!<br>Неверная пара логин-пароль<br>Логин-пароль должен хранится в объекте "security" с полями login и password.<br>* написать функцию регистрации пользователей (+имя, фамилия, о себе и т.д.)<br>Админ может смотреть список пользователей и пары логин-пароль.</span><br>
+                            <input type="button" onclick="button20()" value='Запустить'/>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="task">
-                            <span>Задание 2.2</span>
-                            <span>Заполнить массив произвольным количеством городов. Когда будет введена пустая строка, остановить ввод и вывести информацию о городах.</span>
-                            <input type="button" onclick="button13()" value='Запустить'/>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="task">
                             <span>Задание 3</span>
-                            <span>Реализовать "Решето́ Эратосфе́на":
-                                <ol>
-                                    <li>Выписать подряд все целые числа от двух до n (2, 3, 4, …, n).</li>
-                                    <li>Пусть переменная p изначально равна двум — первому простому числу.</li>
-                                    <li>Зачеркнуть в списке числа кратные p: (2p, 3p, 4p, …).</li>
-                                    <li>Найти первое незачёркнутое число в списке, большее чем p, и присвоить значению переменной p это число.</li>
-                                    <br>Повторять шаги 3 и 4, пока возможно.
-                                </ol>
-                            </span>
-                            <input type="button" onclick="button14()" value='Запустить'/>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button21()" value='Запустить'/>
                         </div>
-                    </div>
-                    <div class="col-md-3">
+                    </div> 
+                    <div class="col-md-4">
                         <div class="task">
-                            <span>Задание 4.1</span>
-                            <span>Составить таблицу значений функции y = 5 – (x * x/2) на отрезке [-5; 5] с шагом 0.5.</span>
-                            <input type="button" onclick="button15()" value='Запустить'/>
+                            <span>Задание 4</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button22()" value='Запустить'/>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="task">
-                            <span>Задание 4.2</span>
-                            <span>Факториал числа представляет собой произведение всех натуральных чисел от 1 до этого числа. По введенному числу найти его факториал.</span>
-                            <input type="button" onclick="button16()" value='Запустить'/>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="task">
-                            <span>Задание 4.3</span>
-                            <span>Заполнить массив выбранного размера числами фибоначчи.
-                            <br>Fn = F(n-1) + F(n-2)</span>
-                            <input type="button" onclick="button17()" value='Запустить'/>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+                    </div> 
+                    <div class="col-md-4">
                         <div class="task">
                             <span>Задание 5</span>
-                            <span>Найти максимальный и минимальный элемент массива и показать его индекс. Массив заполнить случайными целыми числами.</span>
-                            <input type="button" onclick="button18()" value='Запустить'/>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button22()" value='Запустить'/>
+                        </div>
+                    </div>   
+               </div>
+              </div>
+              
+              <p><a name="lec_5"></a></p>
+              <div class="lec">
+                   <h2>Лекция 5</h2>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 1</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button23()" value='Запустить'/>
                         </div>
                     </div>
--->
-                    
-                    
-                    
-                    
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 2</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button24()" value='Запустить'/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 3</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button25()" value='Запустить'/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 4</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button26()" value='Запустить'/>
+                        </div>
+                    </div>   
                </div>
+              
+              <p><a name="lec_6"></a></p>
+              <div class="lec">
+                   <h2>Лекция 6</h2>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 1</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button27()" value='Запустить'/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 2</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button28()" value='Запустить'/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 3</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button29()" value='Запустить'/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 4</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button30()" value='Запустить'/>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 5</span>
+                            <span>Не готово.</span><br>
+                            <input type="button" onclick="button31()" value='Запустить'/>
+                        </div>
+                    </div>  
+                      
+               </div>
+              
+              <p><a name="lec_7"></a></p>
+              <div class="lec">
+                   <h2>Лекция 7</h2>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 1</span>
+                            <span>Сделать select-option, заполненный при помощи JS, в котором можно выбирать несколько вариантов.</span><br>
+                            <input type="button" onclick="button32()" value='Запустить'/>
+                            <hr>
+                            <span>Решение:</span>
+                            <form>
+                                <select name="" id=""></select>
+                                <button name="button" type="button">Выбрать</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 2</span>
+                            <span>Сделать реальный светофор, для которого можно задать время работы зеленого и красного света.</span><br>
+                            <input type="button" onclick="button33()" value='Запустить'/>
+                            <hr>
+                            <span>Решение:</span>
+                            <div class="traffic_light">
+                                <div class="" id="red_light"></div>
+                                <div class="" id="yellow_light"></div>
+                                <div class="" id="green_light"></div>
+                            </div>
+                        </div>
+                    </div>  
+               </div>
+               
+               <p><a name="lec_8"></a></p>
+               <div class="lec">
+                   <h2>Лекция 8</h2>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 1.1</span>
+                            <span>Браузерные события.<br>Спрятать при клике<br>Спрятаться<br>Какие обработчики сработают?</span><br>
+                            <input type="button" onclick="button34()" value='Запустить'/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 1.2</span>
+                            <span>Написать обработчик, используя this, который меняет фон элемента, по которому прошел клик. Цвета сменяются поочередно. (Не менее 7 цветов в наборе)<br>Повесить обработчик на все выбранные элементы (p, div). Элементы должны быть вложены друг в друга.</span><br>
+                            <input type="button" onclick="button35()" value='Запустить'/>
+                            <hr>
+                            <span>Решение:</span>
+                            <div>
+                                <form class="rainbow" style="background-color:red">FORM
+                                <div style="background-color:red">DIV
+                                <p style="background-color:red">P</p>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="task">
+                            <span>Задание 2.1</span>
+                            <span>Всплытие и перехват.<br>Сделать обработчики погружения, которые модифицирует обработчики всплытия при установленной галочке в checkbox.<br>!!!Вывод только обработчиками всплытия!!!<br>По умолчанию:<br>Привет из (элемент)<br>При галочке<br>(элемент) говорит тебя прощай.<br>Скрипт не должен "ломаться".</span><br>
+                            <input type="button" onclick="button()" value='Запустить'/>
+                        </div>
+                    </div>
+               </div>
+               
+              <div class="col-md-4"></div>
           </div>
+  
+          
        </div>
    </main>
 
-
-
-    
-    
-    
+  
    <footer></footer> 
     <script src="../js/script.js"></script>
 </body>

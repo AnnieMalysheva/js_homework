@@ -85,3 +85,53 @@ h2 {
 ol {
     text-align: left;
 }
+
+/*
+form {
+    display: block;
+}*/
+
+
+.traffic_light {
+    width: 50px;
+    height: 160px;
+    background-color: darkgrey;
+    margin: auto;
+}
+
+.traffic_light > div {
+    margin-bottom: 5px;
+}
+
+#red_light {
+	width: 50px;
+	height: 50px;
+/*	background: red;*/
+    -moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 25px;
+}
+
+#yellow_light {
+	width: 50px;
+	height: 50px;
+/*	background: yellow;*/
+    -moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+}
+
+#green_light {
+	width: 50px;
+	height: 50px;
+/*	background: green;*/
+    -moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+}
+
+
+/*
+{
+    border: 1px solid black;
+}*/

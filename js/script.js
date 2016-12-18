@@ -355,30 +355,164 @@ var button18 = function() {
 };
 
 
+// 4-1
 
-
-
-    
-
-
-// 3-4-3
-
-var button_ = function() {
+var button19 = function() {
     
 };
 
-// 3-4-3
 
-var button_ = function() {
+// 
+
+var button20 = function() {
+    var check = {
+        username: 'anna5',
+        password: '12345'
+    }
+    
+    a = prompt('Введите логин');
+    b = prompt('Введите пароль');
+    
+    if ((a == check.username) && (b == check.password)) {
+        alert('Здравствуй, ' + check.username)
+    } else {
+        alert('Неверная пара логин-пароль')
+    }
+};
+
+
+// 4-3
+
+var button21 = function() {
     
 };
 
-// 3-4-3
 
-var button_ = function() {
+
+// 4-4
+
+var button22 = function() {
+    var smart={}
+    smart.name='g9100';
+    smart['hdd']=8192;//Mb
+    smart['ram']=2048;//Mb
+    smart.apps=[];//Установленные приложения
+    smart.active=[];//Запущенные приложения
+    smart.addapp=function(name,hdd,ram){
+        x=smart.apps.length;
+        smart.apps[x]={};
+        smart.apps[x].name=name;
+        smart.apps[x].hdd=hdd;
+        smart.apps[x].ram=ram;
+    }
     
+    smart.start=function(n){
+        smart.active.push(n);
+    }
+    
+    smart.mystatus=function(){
+        usedhdd=0;
+        for (i=0;i<smart.apps.length;i++){
+            usedhdd+=smart['apps'][i].hdd;
+        }
+        usedram=120;
+        for (i=0;i<smart.active.length;i++){
+            j=smart.active[i];
+            usedram+=smart['apps'][j].ram;
+        }
+    console.log('Модель:' +smart.name+' \nЖесткий диск: '+usedhdd+'/'+smart.hdd+'\nПотребление памяти: '+usedram+'/'+smart.ram);
+    }
+    
+    smart.addapp('firefox',30,250);
+    smart.addapp('opera',300,200);
+    smart.addapp('chrome',50,300);
+    smart.addapp('Мимимишки',120,5)
+    smart.start(2);
+    smart.mystatus();
 };
 
+
+
+
+
+
+// 7-1
+
+var button33 = function() {
+    
+}
+
+
+
+// 7-2
+
+var button33 = function() {
+    
+    var red_light = document.getElementById('red_light');
+    var yellow_light = document.getElementById('yellow_light');
+    var green_light = document.getElementById('green_light');
+         
+    function timer () { 
+        var time_red = prompt('Задайте время работы красного светофора, секунд');
+        time_red = parseInt(time_red);
+        var time_green = prompt('Задайте время работы зеленого светофора, секунд');
+        time_green = parseInt(time_green);
+        
+        a = time_red * 1000;
+        b = time_green * 1000;
+      //  while (true){
+        setTimeout(function() {
+        red_light.style.backgroundColor = 'red'; 
+            
+            setTimeout(function() { 
+                red_light.style.backgroundColor = 'red';
+                yellow_light.style.backgroundColor = 'yellow';
+                
+                setTimeout(function() { 
+                    red_light.style.backgroundColor = 'darkgrey';
+                    yellow_light.style.backgroundColor = 'darkgrey'; 
+                    green_light.style.backgroundColor = 'green';
+                    
+                    setTimeout(function() {
+                        green_light.style.backgroundColor = 'darkgrey';
+                        yellow_light.style.backgroundColor = 'yellow';
+                        
+                        setTimeout(function() {
+                            yellow_light.style.backgroundColor = 'darkgrey';
+                            red_light.style.backgroundColor = 'red';
+        }, 1000);
+        }, b);
+        }, 1000);
+        }, 1000);
+        }, a);
+            
+            //endofwhile
+           // }
+    }
+
+    timer();                        
+};
+    
+    
+// 8-1
+
+var button34 = function () {
+    var t = document.getElementsByTagName('form')[0];
+    t.addEventListener('click',handler,false)
+    var t=document.getElementsByTagName('div')[0];
+    t.addEventListener('click',handler,false)
+    var t=document.getElementsByTagName('p')[0];
+    t.addEventListener('click',handler,false)
+
+    function handler(e) {
+        e.preventDefault() // браузер стоять
+        this.style.backgroundColor = 'yellow';
+        //e.stopPropagation() //событие не всплывать
+        console.log(this); alert(e.target+'---'+this);
+        return false // Завершение
+    }
+    alert();
+};
 
 
 
